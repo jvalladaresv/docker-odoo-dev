@@ -9,9 +9,9 @@ services:
       - "${DEBUGPY_PORT}:${DEBUGPY_PORT}"
     volumes:
       - ./conf:/etc/odoo
-      - odoo-web-data:/var/lib/odoo
       - ${ODOO_SERVER}:/var/lib/odoo/odoo
       - ${CUSTOM_ADDONS}:/var/lib/odoo/custom_addons
+      - ${ENTERPRISE_ADDONS}:/var/lib/odoo/enterprise
     entrypoint: ${ENTRYPOINT}
   db:
     container_name: ${PG_CONTAINER_NAME}
@@ -24,7 +24,4 @@ services:
     ports:
       - ${PG_PORT}:5432
     volumes:
-      - pgdb-data:/var/lib/postgresql/data/pgdata
-volumes:
-  odoo-web-data:
-  pgdb-data:
+      - ./db:/mnt/db

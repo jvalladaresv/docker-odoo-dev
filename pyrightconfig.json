@@ -1,3 +1,9 @@
-{
-  "extraPaths": ["/path/server/odoo", "/path/server/odoo/addons", "/path/custom_addons"]
-}
+// {
+//   "extraPaths": [
+//     "/home/james/rapitech/repositorios/odoo/16.0/odoo",
+//     "/home/james/rapitech/repositorios/odoo/16.0/odoo/addons",
+//     "/home/james/rapitech/repositorios/odoo/16.0/odoo/enterprise",
+//     "/home/james/rapitech/docker/qa_apudex_debug/qa_apudex/l10n-peru",
+//     "/home/james/rapitech/docker/qa_apudex_debug/qa_apudex/alicorp-apudex",
+//   ]
+// }

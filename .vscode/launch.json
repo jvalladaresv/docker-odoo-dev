@@ -1,0 +1,36 @@
+{
+    // Use IntelliSense para saber los atributos posibles.
+    // Mantenga el puntero para ver las descripciones de los existentes atributos.
+    // Para más información, visite: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Depurador de Python: Conexión remota",
+            "type": "debugpy",
+            "request": "attach",
+            "connect": {
+                "host": "localhost",
+                "port": 8888
+            },
+            "pathMappings": [
+                {
+                    "localRoot": "${workspaceFolder}/qa_apudex/alicorp-apudex",
+                    "remoteRoot": "/var/lib/odoo/custom_addons/alicorp-apudex"
+                },
+                {
+                    "localRoot": "${workspaceFolder}/qa_apudex/l10n-peru",
+                    "remoteRoot": "/var/lib/odoo/custom_addons/l10n-peru"
+                },
+                {
+                    "localRoot": "/home/james/rapitech/repositorios/odoo/16.0/odoo/addons",
+                    "remoteRoot": "/var/lib/odoo/odoo/addons"
+                },
+                {
+                    "localRoot": "/home/james/rapitech/repositorios/odoo/16.0/enterprise",
+                    "remoteRoot": "/var/lib/odoo/enterprise"
+                }
+
+            ]
+        }
+    ]
+}
