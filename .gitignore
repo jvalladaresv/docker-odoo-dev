@@ -54,6 +54,3 @@ $RECYCLE.BIN/
 *.py[co]
 __pycache__/
 
-
-qa_apudex/*
-!qa_apudex/**/.git
